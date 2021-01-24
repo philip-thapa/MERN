@@ -1,6 +1,6 @@
 const User = require("../models/user");
 const mailgun = require("mailgun-js");
-const DOMAIN = "sandbox6463022163344e6090484d219c26868d.mailgun.org";
+const DOMAIN = "###########";
 const mg = mailgun({ apiKey: process.env.MAILGUN_APIKEY, domain: DOMAIN });
 const { check, validationResult } = require("express-validator");
 var jwt = require("jsonwebtoken");
